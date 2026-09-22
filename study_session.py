@@ -1,6 +1,11 @@
 #official documentation https://docs.opencv.org/5.0/
 import cv2
 
+face_detector = cv2.CascadeClassifier(
+    cv2.data.haarcascades + "haarcascade_frontalface_default.xml"
+)
+
+
 camera = cv2.VideoCapture(0)
 
 while True:
